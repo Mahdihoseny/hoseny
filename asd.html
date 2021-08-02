@@ -1,0 +1,41 @@
+<html>
+    <head>  
+<link type="text/c#">
+
+    </head>
+    <body>
+        <script
+protected void Button1_Click(object sender, EventArgs e)
+{
+switch (ListBox1.SelectedItem.Value)
+{
+case "lis" :
+Label1.Text = "لیسانس ";
+break;
+case "fogh":
+Label1.Text = "فوق دیپلم ";
+break;
+case "dip":
+Label1.Text = "دیپلم ";
+break;
+}></script>
+<script>
+protected void Button1_Click(object sender, EventArgs e)
+    {
+    Response.Write(TextBox1.Text);
+    Response.Write(TextBox2.Text);
+    }</script>
+    <script protected void Button1_Click(object sender, EventArgs e)>
+        {
+        SqlConnection sqlconuniv = new SqlConnection();
+        SqlCommand sqlcomuniv = new SqlCommand();
+        SqlDataAdapter adapteruniversity = new SqlDataAdapter();
+        DataSet dsetuniv = new DataSet();
+        sqlconuniv.ConnectionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=C:\\Users\\zahra-m\\Documents\\university.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+        sqlcomuniv.Connection = sqlconuniv;
+        sqlcomuniv.Parameters.Add("@id", SqlDbType.Int);
+        sqlcomuniv.Parameters["@id"].Value = Convert.ToInt32(id.Text);
+        sqlcomuniv.Parameters.Add("@firstname", SqlDbType.NVarChar);
+        sqlcomuniv.Parameters["@firstname"].Value = (firstname.Text);</script>
+</body>
+</html>
